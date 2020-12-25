@@ -1,23 +1,38 @@
 import Head from 'next/head';
-import Link from 'next/link';
+import styled from '@emotion/styled';
+import Header from '../components/Header';
+import Chart from '../components/Chart';
+import BigCard from '../components/Card/BigCard';
 
 export default function Home() {
+
+  const HomeContainer = styled.main`
+    background-color: #F1F4F8;
+    padding: 30px;
+    width: calc(100% - 210px);
+  `;
+
+  const HomeContent = styled.div`
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  `;
+
   return (
-    <div className="container">
+    <HomeContainer>
       <Head>
         <title>Sirius Future</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
 
-      <main className="main">
-        {/* <Link href="/about">
-          <a>route-test</a>
-        </Link> */}
-      </main>
+      <HomeContent>
+        <Chart name="yandex"/>
+        <Chart name="paypal"/>
+        <BigCard />
+      </HomeContent>
 
-      <footer className="footer">
-        Footer
-      </footer>
-    </div>
+    </HomeContainer>
   )
 }
