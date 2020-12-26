@@ -3,6 +3,9 @@ import styled from '@emotion/styled';
 export const SidebarContainer = styled.nav`
   width: 210px;
   background-color: #fff;
+  @media screen and (max-width: 668px) {
+    display: none;
+  };
 `
 
 export const SidebarLogo = styled.div`

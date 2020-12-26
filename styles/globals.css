@@ -1,6 +1,5 @@
 html,
 body {
-  font-family: 'Jost', sans-serif;
   background-color: #e5e5e5;
 }
 
@@ -23,14 +22,11 @@ a {
   text-decoration: none;
 }
 
-button {
-  font-family: 'Jost', sans-serif;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Jost', sans-serif;
 }
 
 .spinner {
@@ -78,4 +74,9 @@ button {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.progressIcon {
+  position: relative;
+  top: 5px;
 }
