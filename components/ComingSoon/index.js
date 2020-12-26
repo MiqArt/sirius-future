@@ -13,6 +13,9 @@ const ComingSoon = () => {
     justify-content: center;
     color: rgba(0, 0, 0, 0.4);
     user-select: none;
+    @media screen and (max-width: 688px) {
+      width: 100%;
+    };
   `;
 
   const SpinnerText = styled.h3`
