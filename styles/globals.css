@@ -80,3 +80,23 @@ a {
   position: relative;
   top: 5px;
 }
+
+.openMenu button div {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform .2s ease, opacity .2s ease !important;
+}
+
+.openMenu button::before {
+  transform: rotate(45deg);
+  top: 8px !important;
+}
+
+.openMenu button::after {
+  transform: rotate(-45deg);
+  bottom: 8px !important;
+}
+
+.openMenu ul {
+  height: calc(100vh - 80px) !important; 
+}

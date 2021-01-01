@@ -13,8 +13,9 @@ export default function Home() {
     padding: 30px;
     width: calc(100% - 210px);
     @media screen and (max-width: 668px) {
-    width: 100%;
-  };
+      padding-top: 110px;
+      width: 100%;
+    };
   `;
 
   const HomeContent = styled.div`
@@ -25,7 +26,7 @@ export default function Home() {
     @media screen and (max-width: 1250px) {
       flex-wrap: nowrap;
       flex-direction: column;
-    }
+    };
   `;
 
   const CardsWrapper = styled.div`
@@ -67,14 +68,14 @@ export default function Home() {
           <BigCard icon="users" />
           <TwoCardsWrapper>
             <SmallCard icon={'ruble'} text={'Должников'} value={'12'} additionalValue={'(1 850,5 руб)'} />
-            <SmallCard icon={'ticket'} text={'Без абонемента'} value={'30'} additionalValue={false} />
-          </TwoCardsWrapper>
-          <TwoCardsWrapper>
-            <SmallCard icon={'book'} text={'Количество тренеров'} value={'250'} additionalValue={false} />
             <SmallCard icon={'wallet'} text={'К оплате сегодня'} value={'121'} additionalValue={false} />
           </TwoCardsWrapper>
           <TwoCardsWrapper>
+            <SmallCard icon={'ticket'} text={'Без абонемента'} value={'30'} additionalValue={false} />
             <SmallCard icon={'wallet-arrow'} text={'К оплате завтра'} value={'32'} additionalValue={false} />
+          </TwoCardsWrapper>
+          <TwoCardsWrapper>
+            <SmallCard icon={'book'} text={'Количество тренеров'} value={'250'} additionalValue={false} />
             <SmallCardBtn icon="file-edit" text="Получить выписку по зарплате тренеров" />
           </TwoCardsWrapper>
         </CardsWrapper>

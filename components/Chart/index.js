@@ -54,7 +54,7 @@ const ChartComponent = ({ name }) => {
       let startGeneratingData = setInterval(() => {
         let newValues = getRandomInt();
         chart(newValues);
-        setSum(newValues.reduce((t, i) => t + i))
+        setSum(newValues.reduce((t, i) => t + i));
       }, 3000);
       setGenerator(startGeneratingData);
     };
